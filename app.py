@@ -31,7 +31,7 @@ guides_schema = GuideSchema(many=True)
 # Endpoint hello
 @app.route('/')
 def hello():
-    return app.config['SQLALCHEMY_DATABASE_URI']  +' conectado con éxito a la API'
+    return 'Hello conectado con éxito a la API'
 
 # Endpoint to create a new guide
 @app.route('/guide', methods=["POST"])
