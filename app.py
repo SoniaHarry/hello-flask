@@ -54,7 +54,7 @@ def add_guide():
 def get_guides():
     all_guides = Guide.query.all()
     result = guides_schema.dump(all_guides)
-    return jsonify(result.data)
+    return jsonify(result)
 
 
 # Endpoint for querying a single guide
